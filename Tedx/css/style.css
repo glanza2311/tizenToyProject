@@ -1,0 +1,181 @@
+* {
+    font-family: Verdana, Lucida Sans, Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0px auto;
+   background-color: black;
+   
+}
+
+.contents {
+	display: flex;
+	display: -webkit-flex;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	height:100%;
+}
+/*-------------------------- SHOW DETAILS/INFO CSS ------------------------*/
+#show-details{
+	width: 100%;
+    height: 628px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0em -5.5cm;
+    position: absolute;
+    overflow: hidden;
+}
+
+.backgroundImage {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.5;
+}
+
+.show-info{
+	top: 0;
+    width: 70%;
+    height: 100%;
+    left: 45px;
+    position: absolute;
+    z-index: 1;
+}
+
+.logo-text{
+	margin: 0;
+    width: 100%;
+    padding-top: 170px;
+    position: relative;
+}
+
+.ellipsis{
+	display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden; /*Comentar esto para mostrar summary*/
+    line-height: 38px;
+    max-height: 114px;
+    min-height: 38px;
+    text-overflow: ellipsis;
+}
+
+.white-text{
+	color: white;
+}
+.show-title{
+	font-family: "Arial";
+	font-style: italic;
+	font-size: 35px;
+}
+.relative-info{
+	font-size: 18px;
+    margin-right: 3%;
+}
+.summary {
+	font-size: 25px;
+    line-height: 1.5;
+    text-align: justify;
+    font-weight: bold;
+}
+/*----------------------------------SHOW DISPLAY CSS-----------------------------*/
+.shows-display{
+	width: 100%;
+    margin-top: 690px;
+    position: absolute;
+}
+.content-row{
+	margin-bottom: 0;
+    margin-left: 0px;
+    height: 192px;
+    overflow: hidden;
+    width: 100%;
+    transition: margin-left .5s;
+    position: relative;
+}
+.card{
+	border: 3px solid transparent;
+    display: inline-block;
+    margin-left: 56px;
+}
+
+.container{
+	display: inline-block;
+	transition: margin .2s;
+	width: auto;
+    white-space: nowrap;
+}
+
+.card.focused{
+	border: 3px solid red;
+}
+
+.show-image{
+	width: 250px;
+	height: 150px;
+}
+
+.card:focus{
+	border: 5px solid red;
+}
+
+/*--------------------PLAYER CSS----------------------------*/
+
+.player{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.player-controls{
+    display: inline-flex;
+    width: 50%;
+    margin-left: 500px;
+    /* margin-top: 946px; */
+    height: 100px;
+    background-color: slategray;
+    border-radius: 10px;
+}
+
+.player-buttons{
+    margin-left: 68px;
+    margin-right: 20px;
+    margin-top: 30px;
+    width: 35px;
+    height: 35px;
+    border: 3px solid transparent;
+}
+
+.player-buttons.focused{
+    border: 3px solid red;
+}
+
+.player-span{
+    margin-left: 68px;
+    margin-right: 20px;
+    margin-top: 42px;
+    width: 35px;
+    height: 35px;
+}
+
+.player-buttons a {
+    width: 100%;
+    height: 100%;
+}
+
+.player-buttons a i {
+    width: 100%;
+    height: 100%;
+    margin-left: 11px;
+    margin-top: 8px;
+}
+
+#show-name-display{
+    margin-left: 500px;
+}
+#show-info-controls{
+    margin-top: 45%;
+}

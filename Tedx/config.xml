@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="http://yourdomain/Tedx" version="1.0.0" viewmodes="maximized">
+    <tizen:application id="524KaxtbV1.Tedx" package="524KaxtbV1" required_version="2.3"/>
+    <content src="index.html"/>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <access origin="*" subdomains="true"></access>
+    <icon src="icon.png"/>
+    <name>Tedx</name>
+    <tizen:profile name="tv-samsung"/>
+</widget>

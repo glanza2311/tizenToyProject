@@ -1,0 +1,32 @@
+{
+  "name": "babel_webpack_starter",
+  "version": "1.0.0",
+  "description": "Starter pack for compiling ES6+ apps to ES5",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --output-public-path=/build/  --mode development --progress --open --hot",
+    "build": "webpack --mode production --progress",
+    "babel": "babel --presets es2015 src/app.js -o build/main.bundle.js",
+    "webpack": "webpack"
+  },
+  "author": "Brad Traversy",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "http-server": "^0.11.1",
+    "webpack": "^4.16.1",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3.1.10"
+  },
+  "directories": {
+    "lib": "lib"
+  }
+}
